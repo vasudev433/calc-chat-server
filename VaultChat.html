@@ -694,12 +694,7 @@ input[type=file]{display:none;}
    after you deploy the backend.
    Example: const SRV = 'wss://vault-chat-server.onrender.com';
 ═══════════════════════════════════════════════════ */
-const SRV = (()=>{
-  const h = location.hostname || 'localhost';
-  const p = location.protocol === 'https:' ? 'wss:' : 'ws:';
-  return `${p}//${h}:3001`;
-})();
-
+const SRV = 'wss://calc-chat-server.onrender.com' ; 
 const $ = id => document.getElementById(id);
 
 /* ═══════════════════════════
